@@ -48,11 +48,11 @@ def textRecognition(image_path: str):
     )
 
     if result.read:
-        print("Найденный текст:")
+        print("Text found: ")
         for line in result.read.blocks[0].lines:
-            print(f"  {line.text}")
+            print(f"    {line.text}")
     else:
-        print("Текст на изображении не найден.")
+        print("No text found")
 
 
 def speechRecognition(audio_path: str):
